@@ -1,0 +1,61 @@
+
+git --version
+
+Configure Git
+git config --global user.name "w3schools-test"
+git config --global user.email "test@w3schools.com"
+
+git config --list   will list the settings.
+
+git init
+git status
+git status --short   (to show status in compact way)
+
+Staged files are files that are ready to be committed to the repository
+git add index.html  to stage the files
+git rm --cached index.html to unstage
+
+git add --all  or (git add -A) stage all files
+
+git commit -m "First release of Hello World!"  (The commit command performs a commit, and the -m "message" adds a message.)
+
+Note: Short status flags are:
+?? - Untracked files
+A - Files added to stage
+M - Modified files
+D - Deleted files
+
+Git Commit without Stage (The -a option will automatically stage every changed, already tracked file)
+git commit -a -m "Updated index.html with a new line"
+git log    (to view Git Commit Log history)
+
+Git Help
+git command -help
+git help --all
+
+create New Git Branch
+git branch newBranchName
+git branch      (List all branches)
+
+git checkout newBranchName   (check out a branch. Moving us from the current branch, to the one specified at the end of the command)
+
+git checkout -b emergency-fix      (created a new branch from master, and switch to it)
+
+
+Merge Branches
+git merge emergency-fix    (merge the current branch (master) with emergency-fix)
+
+git branch -d emergency-fix      (delete emergency-fix branch)
+
+Add remote github repo to local repo
+git remote add origin https://github.com/tech4nav/gitCheatSheat.git
+
+ git push --set-upstream origin master
+ 
+ Git Fetch  fetch gets all the change history of a tracked branch/repo.
+ git fetch origin
+ 
+ 
+
+
+
