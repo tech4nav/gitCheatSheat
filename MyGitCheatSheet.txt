@@ -52,8 +52,19 @@ git remote add origin https://github.com/tech4nav/gitCheatSheat.git
 
  git push --set-upstream origin master
  
- Git Fetch  fetch gets all the change history of a tracked branch/repo.
- git fetch origin
+ 
+ 
+ Git Pull from GitHub  
+ pull is a combination of 2 different commands: fetch  and merge
+ 
+ git fetch origin        (Git Fetch  fetch gets all the change history of a tracked branch/repo.)
+ git log origin/master
+ git diff origin/master
+ git merge origin/master
+ 
+ git pull origin    ==  git fetch origin  + git merge origin/master
+ 
+ Push Changes to GitHub
  
  
 
