@@ -65,6 +65,10 @@ git remote add origin https://github.com/tech4nav/gitCheatSheat.git
  git pull origin    ==  git fetch origin  + git merge origin/master
  
  Push Changes to GitHub
+ git commit -a -m "Updated index.html. Resized image"  (commit change direct to master)
+ git push origin
+ 
+ 
  
  
 
